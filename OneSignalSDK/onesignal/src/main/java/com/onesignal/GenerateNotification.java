@@ -569,7 +569,7 @@ class GenerateNotification {
               .setContentText(summaryMessage)
               .setNumber(notificationCount)
               .setSmallIcon(getDefaultSmallIconId())
-              .setLargeIcon(getDefaultLargeIcon())
+              .setLargeIcon(getLargeIcon(fcmJson))
               .setOnlyAlertOnce(updateSummary)
               .setAutoCancel(false)
               .setGroup(group)
